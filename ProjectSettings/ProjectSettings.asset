@@ -83,7 +83,7 @@ PlayerSettings:
   productGUID: 7c59529ca20d24755b11f26cfb8577ff
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 15
-  AndroidPreferredInstallLocation: 1
+  AndroidPreferredInstallLocation: 0
   aotOptions: 
   apiCompatibilityLevel: 2
   iPhoneStrippingLevel: 0
@@ -93,7 +93,7 @@ PlayerSettings:
   CreateWallpaper: 0
   APKExpansionFiles: 0
   preloadShaders: 0
-  StripUnusedMeshComponents: 1
+  StripUnusedMeshComponents: 0
   iPhoneSdkVersion: 988
   iPhoneTargetOSVersion: 22
   uIPrerenderedIcon: 0
@@ -123,7 +123,7 @@ PlayerSettings:
   AndroidSplashScreenScale: 0
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
-  AndroidTVCompatibility: 1
+  AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 1
   m_AndroidBanners:
