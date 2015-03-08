@@ -261,6 +261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eye: 1
+  toggleCullingMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -273,6 +276,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eye: 0
+  toggleCullingMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -300,6 +306,7 @@ MonoBehaviour:
   directRender: 1
   stereoMultiplier: 1
   matchMonoFOV: 0
+  matchByZoom: 0
   centerOfInterest: {fileID: 0}
   radiusOfInterest: 0
   checkStereoComfort: 1
@@ -338,4 +345,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100004}
   m_IsPrefabParent: 1
-  m_IsExploded: 1
