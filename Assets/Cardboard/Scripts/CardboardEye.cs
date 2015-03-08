@@ -65,7 +65,7 @@ public class CardboardEye : MonoBehaviour {
   private void FixProjection(ref Matrix4x4 proj, float near, float far, float ipdScale) {
     // Adjust for non-fullscreen camera.  Cardboard SDK assumes fullscreen,
     // so the aspect ratio might not match.
-    float aspectFix = camera.rect.height / camera.rect.width / 2;
+    float aspectFix = GetComponent<Camera>().rect.height / GetComponent<Camera>().rect.width / 2;
     proj[0, 0] *= aspectFix;
 
     // Adjust for IPD scale.  This changes the vergence of the two frustums.
