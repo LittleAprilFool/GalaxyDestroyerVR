@@ -7,7 +7,7 @@ PlayerSettings:
   AndroidProfiler: 0
   defaultScreenOrientation: 3
   targetDevice: 2
-  targetGlesGraphics: -1
+  targetGlesGraphics: 1
   targetIOSGraphics: -1
   targetResolution: 0
   accelerometerFrequency: 60
@@ -74,7 +74,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: org.aprilhex.vrgamejam
+  bundleIdentifier: org.aprilhex.VRGameJam
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
@@ -82,18 +82,18 @@ PlayerSettings:
   xboxOneDisableKinectGpuReservation: 0
   productGUID: 7c59529ca20d24755b11f26cfb8577ff
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 15
+  AndroidMinSdkVersion: 16
   AndroidPreferredInstallLocation: 0
   aotOptions: 
   apiCompatibilityLevel: 2
   iPhoneStrippingLevel: 0
   iPhoneScriptCallOptimization: 0
   ForceInternetPermission: 0
-  ForceSDCardPermission: 0
+  ForceSDCardPermission: 1
   CreateWallpaper: 0
   APKExpansionFiles: 0
   preloadShaders: 0
-  StripUnusedMeshComponents: 0
+  StripUnusedMeshComponents: 1
   iPhoneSdkVersion: 988
   iPhoneTargetOSVersion: 22
   uIPrerenderedIcon: 0
