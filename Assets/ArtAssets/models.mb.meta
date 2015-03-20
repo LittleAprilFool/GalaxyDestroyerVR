@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 6d6978f5d40ac45c0b039ff7d2b3da5a
+timeCreated: 1426661786
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: group1
+    100002: Head
+    100004: HeadDummy
+    100006: HeadTop_End
+    100008: Hips
+    100010: LeftArm
+    100012: LeftEye
+    100014: LeftFoot
+    100016: LeftFootToeBase_End
+    100018: LeftForeArm
+    100020: LeftHand
+    100022: LeftHandIndex1
+    100024: LeftHandIndex2
+    100026: LeftHandIndex3
+    100028: LeftHandThumb1
+    100030: LeftHandThumb2
+    100032: LeftHandThumb3
+    100034: LeftHandThumb4
+    100036: LeftLeg
+    100038: LeftShoulder
+    100040: LeftToeBase
+    100042: LeftUpLeg
+    100044: MascotBodyGeo
+    100046: MascotEyesGeo
+    100048: MascotHeadGeo
+    100050: MascotMeshes
+    100052: //RootNode
+    100054: Neck
+    100056: Planet
+    100058: pSphere1
+    100060: pSphere2
+    100062: pTorus1
+    100064: pTorus2
+    100066: RightArm
+    100068: RightEye
+    100070: RightFoot
+    100072: RightFootToeBase_End
+    100074: RightForeArm
+    100076: RightHand
+    100078: RightHandIndex1
+    100080: RightHandIndex2
+    100082: RightHandIndex3
+    100084: RightHandThumb1
+    100086: RightHandThumb2
+    100088: RightHandThumb3
+    100090: RightHandThumb4
+    100092: RightLeg
+    100094: RightShoulder
+    100096: RightToeBase
+    100098: RightUpLeg
+    100100: Spine
+    100102: Spine1
+    100104: Spine2
+    400000: group1
+    400002: Head
+    400004: HeadDummy
+    400006: HeadTop_End
+    400008: Hips
+    400010: LeftArm
+    400012: LeftEye
+    400014: LeftFoot
+    400016: LeftFootToeBase_End
+    400018: LeftForeArm
+    400020: LeftHand
+    400022: LeftHandIndex1
+    400024: LeftHandIndex2
+    400026: LeftHandIndex3
+    400028: LeftHandThumb1
+    400030: LeftHandThumb2
+    400032: LeftHandThumb3
+    400034: LeftHandThumb4
+    400036: LeftLeg
+    400038: LeftShoulder
+    400040: LeftToeBase
+    400042: LeftUpLeg
+    400044: MascotBodyGeo
+    400046: MascotEyesGeo
+    400048: MascotHeadGeo
+    400050: MascotMeshes
+    400052: //RootNode
+    400054: Neck
+    400056: Planet
+    400058: pSphere1
+    400060: pSphere2
+    400062: pTorus1
+    400064: pTorus2
+    400066: RightArm
+    400068: RightEye
+    400070: RightFoot
+    400072: RightFootToeBase_End
+    400074: RightForeArm
+    400076: RightHand
+    400078: RightHandIndex1
+    400080: RightHandIndex2
+    400082: RightHandIndex3
+    400084: RightHandThumb1
+    400086: RightHandThumb2
+    400088: RightHandThumb3
+    400090: RightHandThumb4
+    400092: RightLeg
+    400094: RightShoulder
+    400096: RightToeBase
+    400098: RightUpLeg
+    400100: Spine
+    400102: Spine1
+    400104: Spine2
+    2300000: pSphere1
+    2300002: pSphere2
+    2300004: pTorus1
+    2300006: pTorus2
+    3300000: pSphere1
+    3300002: pSphere2
+    3300004: pTorus1
+    3300006: pTorus2
+    4300000: MascotHeadGeo
+    4300002: MascotEyesGeo
+    4300004: MascotBodyGeo
+    4300006: pSphere1
+    4300008: pTorus1
+    4300010: pSphere2
+    4300012: pTorus2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: MascotBodyGeo
+    13700002: MascotEyesGeo
+    13700004: MascotHeadGeo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

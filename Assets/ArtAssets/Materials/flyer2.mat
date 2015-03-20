@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: lambert1
+  m_Name: flyer2
   m_Shader: {fileID: 4800000, guid: 44b54c59129572f469a949a22bc08cd0, type: 3}
   m_ShaderKeywords: _TEX_ON
   m_LightmapFlags: 5
@@ -81,7 +81,7 @@ Material:
         first:
           name: _ToonShade
         second:
-          m_Texture: {fileID: 2800000, guid: d245f9671bf6842d48d1a304086ee00d, type: 3}
+          m_Texture: {fileID: 2800000, guid: 76c13ed0b0c32472b8dcc853e77b4373, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -189,7 +189,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .676470578, g: .213884085, b: .213884085, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _EmissionColorUI
