@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: planet1-1
-  m_Shader: {fileID: 4800000, guid: 76374158b4c4e5744b394e9290aae693, type: 3}
-  m_ShaderKeywords: _COLOR_ON _OUTL_ON _TEX_ON
+  m_Shader: {fileID: 4800000, guid: 44b54c59129572f469a949a22bc08cd0, type: 3}
+  m_ShaderKeywords: _COLOR_ON _TEX_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -81,7 +81,7 @@ Material:
         first:
           name: _ToonShade
         second:
-          m_Texture: {fileID: 2800000, guid: 76c13ed0b0c32472b8dcc853e77b4373, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -144,7 +144,7 @@ Material:
       data:
         first:
           name: _Outl
-        second: 1
+        second: 0
       data:
         first:
           name: _DetailTex
@@ -168,7 +168,7 @@ Material:
       data:
         first:
           name: _Outline
-        second: 2
+        second: 5
       data:
         first:
           name: _Asym

@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: flyerbottom
-  m_Shader: {fileID: 0}
-  m_ShaderKeywords: _COLOR_ON
+  m_Name: planet2-1
+  m_Shader: {fileID: 4800000, guid: 44b54c59129572f469a949a22bc08cd0, type: 3}
+  m_ShaderKeywords: _COLOR_ON _TEX_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -18,7 +18,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: fcf5185eef52c4814868d1feb6cb81a9, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -81,7 +81,7 @@ Material:
         first:
           name: _ToonShade
         second:
-          m_Texture: {fileID: 2800000, guid: 76c13ed0b0c32472b8dcc853e77b4373, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -148,7 +148,7 @@ Material:
       data:
         first:
           name: _DetailTex
-        second: 0
+        second: 1
       data:
         first:
           name: _TintColor
@@ -168,7 +168,7 @@ Material:
       data:
         first:
           name: _Outline
-        second: 2
+        second: .00999999978
       data:
         first:
           name: _Asym
@@ -189,7 +189,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .941176474, g: .407302231, b: .117647059, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _EmissionColorUI
@@ -197,7 +197,7 @@ Material:
       data:
         first:
           name: _OutlineColor
-        second: {r: .772058845, g: .326754719, b: .085153535, a: 1}
+        second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
           name: _Asymmetry
