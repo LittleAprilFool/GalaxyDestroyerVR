@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: planet1-1
-  m_Shader: {fileID: 4800000, guid: 44b54c59129572f469a949a22bc08cd0, type: 3}
-  m_ShaderKeywords: _COLOR_ON _TEX_ON
+  m_Shader: {fileID: 4800000, guid: 76374158b4c4e5744b394e9290aae693, type: 3}
+  m_ShaderKeywords: _COLOR_ON _OUTL_ON _TEX_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -144,7 +144,7 @@ Material:
       data:
         first:
           name: _Outl
-        second: 0
+        second: 1
       data:
         first:
           name: _DetailTex
@@ -197,7 +197,7 @@ Material:
       data:
         first:
           name: _OutlineColor
-        second: {r: .426470578, g: .340441167, b: .0595804527, a: 1}
+        second: {r: .352941155, g: .281135887, b: .0467128009, a: 1}
       data:
         first:
           name: _Asymmetry
