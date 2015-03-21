@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: bc6d681bf356a46388c4bb4fa51be702, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -257,7 +257,7 @@ GameObject:
   - 4: {fileID: 447375684}
   - 114: {fileID: 447375683}
   m_Layer: 0
-  m_Name: Bomb Respawn
+  m_Name: Rocket Respawn
   m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bomb: {fileID: 166564, guid: 8ff462edcd6ef492f970c9e75620ce1f, type: 2}
+  power: {fileID: 1483253523}
   speed: {x: 0, y: 5, z: 0}
 --- !u!4 &447375684
 Transform:
@@ -372,10 +373,6 @@ Prefab:
     - target: {fileID: 496508, guid: 78af999dfa14847e8b850e681483341f, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 133792, guid: 78af999dfa14847e8b850e681483341f, type: 2}
-      propertyPath: m_TagString
-      value: GameController
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78af999dfa14847e8b850e681483341f, type: 2}
@@ -591,6 +588,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8288bc2c3372744798557259db06c024, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1483253523
+GameObject:
+  m_PrefabParentObject: {fileID: 106084, guid: 78af999dfa14847e8b850e681483341f, type: 2}
+  m_PrefabInternal: {fileID: 521933355}
 --- !u!1001 &1536496023
 Prefab:
   m_ObjectHideFlags: 0
@@ -696,7 +697,7 @@ GameObject:
   - 114: {fileID: 2092988795}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

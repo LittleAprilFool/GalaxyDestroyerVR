@@ -31,7 +31,7 @@ GameObject:
   - 114: {fileID: 11421996}
   - 114: {fileID: 11483082}
   m_Layer: 5
-  m_Name: Image 1
+  m_Name: Power Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ GameObject:
   - 114: {fileID: 11486344}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ GameObject:
   - 114: {fileID: 11483932}
   - 114: {fileID: 11477978}
   m_Layer: 5
-  m_Name: Image 2
+  m_Name: Life Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,7 +241,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 68, y: 149.699997, z: 0}
+  m_LocalPosition: {x: 83.4000015, y: 96.0999985, z: 0}
   m_LocalScale: {x: 4.91036415, y: 4.91036415, z: 4.91036415}
   m_Children:
   - {fileID: 22465608}
@@ -269,7 +269,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.1512508, y: 5.01999998, z: -42.7731934}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 430328}
@@ -501,7 +501,7 @@ MonoBehaviour:
   vrModeEnabled: 1
   enableAlignmentMarker: 1
   enableSettingsButton: 1
-  tapIsTrigger: 0
+  tapIsTrigger: 1
   backButtonExitsApp: 1
   autoUntiltHead: 1
 --- !u!114 &11454190
@@ -583,13 +583,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff445deb556d44eb8dec6157f9ef0d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleEnd: {x: 0, y: .200000003, z: 1}
-  time: 5
-  power: 0
-  limitx: {x: .850000024, y: .200000003, z: 1}
-  maxx: {x: 1.25, y: .200000003, z: 1}
-  gap: {x: .5, y: 0, z: 0}
-  speed: {x: .00999999978, y: 0, z: 0}
+  maxScale: .25
+  throttleScale: .170000002
+  fireUsage: .200000003
+  recoverSpeed: .00300000003
 --- !u!114 &11483932
 MonoBehaviour:
   m_ObjectHideFlags: 1

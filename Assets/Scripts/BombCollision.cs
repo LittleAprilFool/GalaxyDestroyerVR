@@ -13,7 +13,17 @@ public class BombCollision : MonoBehaviour {
 			isTargetLayer[LayerMask.NameToLayer(layer)] = true;
 		}
 	}
-	
+
+	IEnumerator DestroyParticleSystems(GameObject explosionInstance) {
+		Debug.Log(1);
+		yield return new WaitForSeconds(10);
+		Debug.Log(2);
+		var systems = explosionInstance.GetComponentsInChildren<ParticleSystem>();
+		foreach (ParticleSystem system in systems) system.Clear();
+		Destroy(explosionInstance);
+		yield return null;
+	}
+
 	void OnCollisionEnter (Collision collision) {
 		Debug.Log ("Hit: " + collision.gameObject.name);
 		if (isTargetLayer[collision.gameObject.layer] || collision.gameObject.GetType() == gameObject.GetType()) {
