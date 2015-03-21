@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11435566}
   - 114: {fileID: 11451162}
   m_Layer: 11
-  m_Name: planet2-3
+  m_Name: Planet2-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.30000019, y: 0, z: 0}
+  m_LocalPosition: {x: -11.1000004, y: 0, z: -11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444926}
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundness: {x: 0, y: 0, z: 0}
   radius: 40
-  manulscale: 0
+  randomScale: 1
 --- !u!135 &13500264
 SphereCollider:
   m_ObjectHideFlags: 1

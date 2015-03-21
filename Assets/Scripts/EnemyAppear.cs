@@ -37,7 +37,6 @@ public class EnemyAppear : MonoBehaviour {
 				GameObject newAlien;
 				if(seed < 0) newAlien = Instantiate(Alien1, transform.position,Quaternion.identity) as GameObject;
 				else newAlien = Instantiate(Alien2, transform.position,Quaternion.identity) as GameObject;
-				newAlien.GetComponent<RevolveSpin>().manulscale = 97;
 			}
 			aliennum = aliennum + number;
 			status = 1;

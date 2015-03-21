@@ -30,7 +30,7 @@ GameObject:
   - 114: {fileID: 11425984}
   - 114: {fileID: 11475250}
   m_Layer: 11
-  m_Name: planet1-2
+  m_Name: Planet1-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundness: {x: 0, y: 0, z: 0}
   radius: 15
-  manulscale: 0
+  randomScale: 1
 --- !u!135 &13537486
 SphereCollider:
   m_ObjectHideFlags: 1

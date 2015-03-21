@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bomb: {fileID: 166564, guid: 8ff462edcd6ef492f970c9e75620ce1f, type: 2}
-  speed: {x: 0, y: 20, z: 0}
+  speed: {x: 0, y: 5, z: 0}
 --- !u!4 &447375684
 Transform:
   m_ObjectHideFlags: 0
@@ -677,7 +677,7 @@ Transform:
   m_GameObject: {fileID: 1594160987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalScale: {x: 300, y: 300, z: 300}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
