@@ -28,6 +28,7 @@ GameObject:
   - 33: {fileID: 3394946}
   - 23: {fileID: 2338008}
   - 95: {fileID: 9594676}
+  - 135: {fileID: 13522572}
   m_Layer: 11
   m_Name: planet2
   m_TagString: Untagged
@@ -98,7 +99,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189014}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: eeb3f4eb5386d40d88450c54730445ec, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -134,6 +135,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rate: {x: 0, y: 1, z: 0}
+--- !u!135 &13522572
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.75891495
+  m_Center: {x: .00290477276, y: .00845050812, z: .00917625427}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

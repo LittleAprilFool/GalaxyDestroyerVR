@@ -46,6 +46,7 @@ GameObject:
   - 136: {fileID: 13665224}
   - 54: {fileID: 5424724}
   - 114: {fileID: 11496728}
+  - 114: {fileID: 11436716}
   m_Layer: 0
   m_Name: rocket
   m_TagString: Untagged
@@ -80,8 +81,6 @@ GameObject:
   - 4: {fileID: 428158}
   - 199: {fileID: 19990464}
   - 198: {fileID: 19852920}
-  - 135: {fileID: 13502768}
-  - 114: {fileID: 11429832}
   m_Layer: 0
   m_Name: Afterburner
   m_TagString: Untagged
@@ -125,8 +124,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172950}
   m_LocalRotation: {x: .707800627, y: 0, z: 0, w: .706412256}
-  m_LocalPosition: {x: 0, y: -.0472499989, z: -9.27739966e-05}
-  m_LocalScale: {x: .0100894812, y: .0100894822, z: .0100894822}
+  m_LocalPosition: {x: -0, y: -.1153, z: -9.99999975e-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 403826}
   m_Father: {fileID: 484734}
@@ -173,9 +172,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166564}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.1800003, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalRotation: {x: 0, y: -.705472648, z: 0, w: .708737195}
+  m_LocalPosition: {x: 6.21999979, y: .479999989, z: 10.04}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
   - {fileID: 435114}
   - {fileID: 465024}
@@ -298,7 +297,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166564}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 02b21e530786e413fa89992b54d3227a, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -308,21 +307,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11429832
+--- !u!114 &11436716
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172950}
+  m_GameObject: {fileID: 166564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d44a238286f6904198ab78e914c229d, type: 3}
+  m_Script: {fileID: 11500000, guid: 039587c051912eb4ead9e58344c5f3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectAngle: 15
-  effectWidth: 1
-  effectDistance: 3
-  force: 10
+  multiplier: 2.5
 --- !u!114 &11496728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -335,18 +331,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 107320, guid: 715269663fa1a474fad42f1fde675402, type: 2}
---- !u!135 &13502768
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172950}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.5
-  m_Center: {x: 0, y: 0, z: 1.5}
+  targetLayers:
+  - Planet
+  - Enemy
 --- !u!136 &13665224
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -725,16 +712,16 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 16777215
+          rgba: 2030006185
         key1:
           serializedVersion: 2
-          rgba: 1936516095
+          rgba: 3359475963
         key2:
           serializedVersion: 2
-          rgba: 4032763
+          rgba: 1617748991
         key3:
           serializedVersion: 2
-          rgba: 16740265
+          rgba: 16753539
         key4:
           serializedVersion: 2
           rgba: 16753539
@@ -748,23 +735,23 @@ ParticleSystem:
           serializedVersion: 2
           rgba: 0
         ctime0: 0
-        ctime1: 5174
-        ctime2: 7090
-        ctime3: 45875
+        ctime1: 56861
+        ctime2: 58403
+        ctime3: 65535
         ctime4: 65535
         ctime5: 65535
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 26600
-        atime2: 65535
-        atime3: 0
-        atime4: 0
+        atime1: 6554
+        atime2: 32768
+        atime3: 65535
+        atime4: 65535
         atime5: 0
         atime6: 0
         atime7: 0
-        m_NumColorKeys: 5
-        m_NumAlphaKeys: 3
+        m_NumColorKeys: 4
+        m_NumAlphaKeys: 4
       minGradient:
         key0:
           serializedVersion: 2
@@ -1415,7 +1402,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .150000006
+      scalar: .200000003
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1430,7 +1417,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .666666627
+          value: .75
           inSlope: 0
           outSlope: 0
           tangentMode: 0

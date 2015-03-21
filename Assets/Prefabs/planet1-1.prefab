@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 418066}
   - 114: {fileID: 11438920}
+  - 114: {fileID: 11422366}
   m_Layer: 11
   m_Name: planet1-1
   m_TagString: Untagged
@@ -27,6 +28,7 @@ GameObject:
   - 33: {fileID: 3343106}
   - 23: {fileID: 2358082}
   - 95: {fileID: 9531006}
+  - 135: {fileID: 13599302}
   m_Layer: 11
   m_Name: planet2
   m_TagString: Untagged
@@ -97,7 +99,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113766}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: eeb3f4eb5386d40d88450c54730445ec, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -107,6 +109,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11422366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c98bb49acad544ce9729c28bd7c4e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundness: {x: 0, y: 0, z: 0}
+  radius: 10
+  manulscale: 0
 --- !u!114 &11438920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,6 +135,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rate: {x: 0, y: 1, z: 0}
+--- !u!135 &13599302
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.75891495
+  m_Center: {x: .00290477276, y: .00845050812, z: .00917625427}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

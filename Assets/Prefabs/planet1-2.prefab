@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3385264}
   - 23: {fileID: 2342876}
   - 95: {fileID: 9597472}
+  - 135: {fileID: 13537486}
   m_Layer: 11
   m_Name: planet2
   m_TagString: Untagged
@@ -27,6 +28,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 401980}
   - 114: {fileID: 11425984}
+  - 114: {fileID: 11475250}
   m_Layer: 11
   m_Name: planet1-2
   m_TagString: Untagged
@@ -41,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.2304001, y: .00845050812, z: 9.94592857}
+  m_LocalPosition: {x: 26.7000008, y: 0, z: 9.89999962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 480520}
@@ -97,7 +99,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104264}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: eeb3f4eb5386d40d88450c54730445ec, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -119,6 +121,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rate: {x: 0, y: 1, z: 0}
+--- !u!114 &11475250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c98bb49acad544ce9729c28bd7c4e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundness: {x: 0, y: 0, z: 0}
+  radius: 15
+  manulscale: 0
+--- !u!135 &13537486
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.75891495
+  m_Center: {x: .00290477276, y: .00845050812, z: .00917625427}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
