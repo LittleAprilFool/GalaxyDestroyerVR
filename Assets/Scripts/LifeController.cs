@@ -11,7 +11,7 @@ public class LifeController : MonoBehaviour {
 	public float delta;
 	private GameObject danger;
 	private GameObject enemy;
-	public int sstatus;
+	private bool sstatus;
 	private int timer;
 
 	private int lifenumber;
@@ -31,18 +31,18 @@ public class LifeController : MonoBehaviour {
 
 		lifenumber = initLife;
 		enemy = GameObject.Find("Enemy");
-		sstatus = enemy.GetComponent<EnemyAppear> ().status;
+		sstatus = enemy.GetComponent<EnemyAppear> ().HasEnemy();
 		timer = 0;
 	}
 
 	void Update(){
-		sstatus = enemy.GetComponent<EnemyAppear> ().status;
+		sstatus = enemy.GetComponent<EnemyAppear> ().HasEnemy();
 		//been hit
-		if (sstatus != 0) {
+		if (sstatus) {
 			timer++;
 			if (timer == 500) {
 				timer = 0;
-				loselife ();
+				loseLife ();
 			}
 		} else {
 			timer = 0;
@@ -50,10 +50,10 @@ public class LifeController : MonoBehaviour {
 		}
 	}
 
-	public void loselife(){
+	public void loseLife(){
 		Debug.Log ("lose a life");
 		if (lifenumber > 0) {
-			transform.localScale += new Vector3 (delta, 0, 0);
+			transform.localScale += new Vector3 (delta, 0f, 0f);
 			lifenumber --;
 			if(lifenumber == 0) Application.LoadLevel(1);
 		}

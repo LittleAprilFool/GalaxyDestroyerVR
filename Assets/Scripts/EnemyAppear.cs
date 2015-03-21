@@ -17,6 +17,10 @@ public class EnemyAppear : MonoBehaviour {
 	private float timer2;
 	private bool hasEnemey = false;
 
+	public bool HasEnemy(){
+		return hasEnemey;
+	}
+
 	// Use this for initialization
 	void Start () {
 		timer1 = 0;
@@ -51,6 +55,7 @@ public class EnemyAppear : MonoBehaviour {
 				newAlien = Instantiate(Alien1, transform.position,Quaternion.identity) as GameObject;
 			else
 				newAlien = Instantiate(Alien2, transform.position,Quaternion.identity) as GameObject;
+
 			alienNum ++;
 			if (!hasEnemey) timer2 = 0;
 			hasEnemey = true;
