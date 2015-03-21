@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AutoSpin : MonoBehaviour {
+public class SelfSpin : MonoBehaviour {
 	public Vector3 rate;
 	// Use this for initialization
 	void Start () {
