@@ -1,34 +1,55 @@
-﻿using UnityEngine;
+﻿// README
+//
+// return power
+// public float Power()
+//
+// return avaliable or not
+// public bool Avaliable()
+//
+// after shoot something
+// public void Active()
+
+using UnityEngine;
 using System.Collections;
 
 public class PowerController : MonoBehaviour {
 	public Vector3 scaleEnd;
 	public float time;
-	private float power;
+	public float power;
+	private float morethan;
+	public Vector3 limitx;
+	public Vector3 maxx;
+	public Vector3 gap;
+	public Vector3 speed;
 
 	public float Power {
 		get { return power; }
 	}
 
-	// Use this for initialization
-	IEnumerator Start () {
-		Vector3 scaleStart = transform.localScale; 
-		while (true) {
-			yield return StartCoroutine( ScaleObject(transform, scaleStart, scaleEnd, time));
-			yield return StartCoroutine( ScaleObject(transform, scaleEnd, scaleStart, time));
-		}
+	void Start(){
+		power = 1;
+	}
+	
+	void Update(){
+		if(transform.localScale.x > 0f) transform.localScale -= speed;
+		if (transform.localScale.x < 0f)
+			transform.localScale = scaleEnd;
+		power = 1 - transform.localScale.x / maxx.x;
+//		if (Input.GetMouseButtonDown(0))
+//			Active();
 	}
 
-	IEnumerator ScaleObject (Transform thisTransform, Vector3 scaleStart, Vector3 scaleEnd, float time){
-		float i = 0;
-		float rate = 1.0f / time;
-		while (i < 1.0f) {
-			if (scaleStart.x > scaleEnd.x) power = 1 - i;
-			else power = i;
-			i += Time.deltaTime * rate;
-			thisTransform.localScale = Vector3.Lerp (scaleStart, scaleEnd, i);
-			yield return null;	
-		}
+	public void Active(){
+		if (transform.localScale.x < maxx.x) 
+			transform.localScale += gap;
+		if (transform.localScale.x > maxx.x) 
+			transform.localScale = maxx;
 	}
 
+	public bool Avaliable(){
+		if (transform.localScale.x > limitx.x)
+			return false;
+		else
+			return true;
+	}
 }
