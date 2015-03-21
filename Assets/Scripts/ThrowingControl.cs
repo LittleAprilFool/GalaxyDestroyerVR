@@ -5,7 +5,6 @@ public class ThrowingControl : MonoBehaviour {
 
 	public GameObject bomb;
 	public Vector3 speed;
-	public GameObject powerController;
 	private CardboardHead head;
 
 	// Use this for initialization
@@ -22,7 +21,7 @@ public class ThrowingControl : MonoBehaviour {
 			Debug.Log ("Throw!");
 			GameObject newbomb = Instantiate(bomb, transform.position, head.transform.rotation * transform.rotation) as GameObject;
 			Rigidbody rigidbody = newbomb.GetComponent<Rigidbody>();
-			rigidbody.velocity = newbomb.transform.TransformVector(speed * powerController.GetComponent<PowerController>().Power);
+			rigidbody.velocity = newbomb.transform.TransformVector(speed);
 		}
 	}
 

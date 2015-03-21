@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3374392}
   - 23: {fileID: 2360932}
   - 95: {fileID: 9506782}
+  - 135: {fileID: 13564542}
   m_Layer: 11
   m_Name: planet2
   m_TagString: Untagged
@@ -27,8 +28,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 461088}
   - 114: {fileID: 11493122}
+  - 114: {fileID: 11491100}
   m_Layer: 11
-  m_Name: planet2-1
+  m_Name: Planet2-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6, y: 0, z: -11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441618}
@@ -97,7 +99,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113542}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: eeb3f4eb5386d40d88450c54730445ec, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -107,6 +109,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11491100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c98bb49acad544ce9729c28bd7c4e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundness: {x: 0, y: 0, z: 0}
+  radius: 30
+  randomScale: 1
 --- !u!114 &11493122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,6 +135,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rate: {x: 0, y: 1, z: 0}
+--- !u!135 &13564542
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.75891495
+  m_Center: {x: .00290477276, y: .00845050812, z: .00917625427}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
