@@ -87,6 +87,10 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &50189778
+GameObject:
+  m_PrefabParentObject: {fileID: 174642, guid: 78af999dfa14847e8b850e681483341f, type: 2}
+  m_PrefabInternal: {fileID: 521933355}
 --- !u!4 &56772121
 Transform:
   m_PrefabParentObject: {fileID: 449128, guid: 8fd13e23fa5c34b2195909e9c2e845c6, type: 2}
@@ -276,6 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bomb: {fileID: 166564, guid: 8ff462edcd6ef492f970c9e75620ce1f, type: 2}
   power: {fileID: 1483253523}
+  enemy: {fileID: 2092988794}
   speed: {x: 0, y: 5, z: 0}
 --- !u!4 &447375684
 Transform:
@@ -715,10 +720,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Alien1: {fileID: 146886, guid: 3b007101810ef4c018031cb24cbc14cb, type: 2}
   Alien2: {fileID: 135086, guid: 496bb3b892b384c7c8b8bd38feb795d7, type: 2}
-  number: 3
-  gap_time: 5
-  status: 0
-  aliennum: 0
+  lifeBar: {fileID: 50189778}
+  maxNumber: 5
+  secondsPerNewAlien: 5
+  secondsPerAttack: 3
 --- !u!4 &2092988796
 Transform:
   m_ObjectHideFlags: 0

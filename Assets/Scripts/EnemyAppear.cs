@@ -5,41 +5,55 @@ public class EnemyAppear : MonoBehaviour {
 
 	public GameObject Alien1;
 	public GameObject Alien2;
+	public GameObject lifeBar;
 
-	public int number;
-	public int gap_time;
-	public int status;
-	public int aliennum;
-	//0 normal
-	//1 been attacked
+	public int maxNumber = 5;
+	public float secondsPerNewAlien = 5;
+	public float secondsPerAttack = 2;
 
-	private int timer;
+	private LifeController lifeController;
+	private int alienNum = 0;
+	private float timer1;
+	private float timer2;
+	private bool hasEnemey = false;
 
 	// Use this for initialization
 	void Start () {
-		timer = 0;
-		status = 0;
-		aliennum = 0;
+		timer1 = 0;
+		timer2 = 0;
+		lifeController = lifeBar.GetComponent<LifeController>();
 	}
 
-	// Update is called once per frame
-	void Update () {
-		timer ++;
-		if (aliennum == 0)
-			status = 0;
-		if (timer == 100 * gap_time) {
-			timer = 0;
-			int i;
-			for(i = 0; i < number;i++)
-			{
-				float seed=0;
-				while(seed==0) seed = Random.Range(-1,2);
-				GameObject newAlien;
-				if(seed < 0) newAlien = Instantiate(Alien1, transform.position,Quaternion.identity) as GameObject;
-				else newAlien = Instantiate(Alien2, transform.position,Quaternion.identity) as GameObject;
+	public void destroyEnemy () {
+		alienNum--;
+		if (alienNum == 0) hasEnemey = false;
+	}
+
+	void FixedUpdate () {
+		timer2 += Time.deltaTime;
+		if (timer2 >= secondsPerAttack) {
+			timer2 = 0;
+			if (hasEnemey) {
+				Debug.Log("attacked");
+				lifeController.loseLife();
 			}
-			aliennum = aliennum + number;
-			status = 1;
+		}
+
+		timer1 += Time.deltaTime;
+		if (timer1 >= secondsPerNewAlien) {
+			timer1 = 0;
+			if (alienNum == maxNumber) return;
+			Debug.Log("new enemy");
+
+			float seed = Random.Range(-1,2);
+			GameObject newAlien;
+			if (seed <= 0)
+				newAlien = Instantiate(Alien1, transform.position,Quaternion.identity) as GameObject;
+			else
+				newAlien = Instantiate(Alien2, transform.position,Quaternion.identity) as GameObject;
+			alienNum ++;
+			if (!hasEnemey) timer2 = 0;
+			hasEnemey = true;
 		}
 	}
 }
