@@ -422,9 +422,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleEnd: {x: 0, y: .200000003, z: 1}
   time: 5
-  limity: .839999974
-  maxy: 1.25
-  delta: .0500000007
+  power: 0
+  limitx: {x: .850000024, y: .200000003, z: 1}
+  maxx: {x: 1.25, y: .200000003, z: 1}
+  gap: {x: .5, y: 0, z: 0}
+  speed: {x: .00999999978, y: 0, z: 0}
 --- !u!114 &1057264302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,6 +727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f9066c1125e4a668f1508f9542c6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifenumber: 6
+  delta: .200000003
 --- !u!114 &1951854429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,7 +742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .921568632, g: .921568632, b: .921568632, a: 1}
+  m_Color: {r: .786764741, g: .804119825, b: .804119825, a: 1}
   m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
