@@ -47,7 +47,7 @@ GameObject:
   - 114: {fileID: 11405510}
   - 135: {fileID: 13517712}
   m_Layer: 10
-  m_Name: Flyer2
+  m_Name: flyer2-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

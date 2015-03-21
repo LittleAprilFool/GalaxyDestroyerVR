@@ -48,7 +48,7 @@ GameObject:
   - 114: {fileID: 11496728}
   - 114: {fileID: 11436716}
   m_Layer: 0
-  m_Name: Rocket
+  m_Name: rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

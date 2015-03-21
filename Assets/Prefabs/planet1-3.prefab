@@ -30,7 +30,7 @@ GameObject:
   - 114: {fileID: 11486072}
   - 114: {fileID: 11409266}
   m_Layer: 11
-  m_Name: Planet1-3
+  m_Name: planet1-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

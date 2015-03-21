@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11438920}
   - 114: {fileID: 11422366}
   m_Layer: 11
-  m_Name: Planet1-1
+  m_Name: planet1-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
