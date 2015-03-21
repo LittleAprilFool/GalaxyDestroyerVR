@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PowerController : MonoBehaviour {
+public class LifeController : MonoBehaviour {
 	public int lifenumber;
 	public float delta;
 
