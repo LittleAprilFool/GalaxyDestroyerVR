@@ -55,7 +55,7 @@ public class LifeController : MonoBehaviour {
 		if (lifenumber > 0) {
 			transform.localScale += new Vector3 (delta, 0f, 0f);
 			lifenumber --;
-			if(lifenumber == 0) Application.LoadLevel(1);
+			if(lifenumber == 0) Application.LoadLevel(2);
 		}
 
 		danger.SetActive (true);

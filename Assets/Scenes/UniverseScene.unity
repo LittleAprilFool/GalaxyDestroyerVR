@@ -398,11 +398,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 106084, guid: 78af999dfa14847e8b850e681483341f, type: 2}
       propertyPath: m_Name
-      value: Power
+      value: Power Bar
       objectReference: {fileID: 0}
     - target: {fileID: 174642, guid: 78af999dfa14847e8b850e681483341f, type: 2}
       propertyPath: m_Name
-      value: Life
+      value: Life Bar
       objectReference: {fileID: 0}
     - target: {fileID: 11483082, guid: 78af999dfa14847e8b850e681483341f, type: 2}
       propertyPath: scaleEnd.y
@@ -539,7 +539,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 964761910}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Planets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ RectTransform:
   m_GameObject: {fileID: 1939138447}
   m_LocalRotation: {x: 0, y: 0, z: -.221939623, w: .975060463}
   m_LocalPosition: {x: 0, y: 0, z: 9.5}
-  m_LocalScale: {x: .0321349688, y: .0321349613, z: .0321349613}
+  m_LocalScale: {x: .0299999993, y: .0299999993, z: .0299999993}
   m_Children: []
   m_Father: {fileID: 1358172120}
   m_RootOrder: 0
@@ -867,7 +867,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2092988796}
   - 114: {fileID: 2092988795}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Respawn
   m_Icon: {fileID: 0}

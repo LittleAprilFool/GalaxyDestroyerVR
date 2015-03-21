@@ -16,7 +16,7 @@ public class ThrowingControl : MonoBehaviour {
 	void Start () {
 		head = Camera.main.GetComponent<StereoController>().Head;
 		_power = power.GetComponent<PowerController>();
-		enemyControl = power.GetComponent<EnemyAppear>();
+		enemyControl = enemy.GetComponent<EnemyAppear>();
 	}
 	
 	// Update is called once per frame
