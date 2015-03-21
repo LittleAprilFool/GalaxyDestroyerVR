@@ -13,43 +13,31 @@ using UnityEngine;
 using System.Collections;
 
 public class PowerController : MonoBehaviour {
-	public Vector3 scaleEnd;
-	public float time;
-	public float power;
-	private float morethan;
-	public Vector3 limitx;
-	public Vector3 maxx;
-	public Vector3 gap;
-	public Vector3 speed;
+	public float maxScale;
+	public float throttleScale;
+
+	public float fireUsage;
+	public float recoverSpeed;
 
 	public float Power {
-		get { return power; }
+		get { return 1 - transform.localScale.x / maxScale; }
 	}
 
-	void Start(){
-		power = 1;
-	}
-	
-	void Update(){
-		if(transform.localScale.x > 0f) transform.localScale -= speed;
-		if (transform.localScale.x < 0f)
-			transform.localScale = scaleEnd;
-		power = 1 - transform.localScale.x / maxx.x;
-//		if (Input.GetMouseButtonDown(0))
-//			Active();
+	void Update() {
+		//if (Input.GetMouseButtonDown(0))
+		//	Fire();
 	}
 
-	public void Active(){
-		if (transform.localScale.x < maxx.x) 
-			transform.localScale += gap;
-		if (transform.localScale.x > maxx.x) 
-			transform.localScale = maxx;
+	void FixedUpdate(){
+		if (transform.localScale.x > 0) transform.localScale -= new Vector3(maxScale * recoverSpeed, 0, 0);
 	}
 
-	public bool Avaliable(){
-		if (transform.localScale.x > limitx.x)
-			return false;
-		else
-			return true;
+	public void Fire(){
+		if (Available()) 
+			transform.localScale += new Vector3(maxScale * fireUsage, 0, 0);
+	}
+
+	public bool Available(){
+		return transform.localScale.x < throttleScale;
 	}
 }
