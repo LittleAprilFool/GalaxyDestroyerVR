@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3356042}
   - 23: {fileID: 2360260}
   - 95: {fileID: 9563838}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: planet2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 454566}
   - 114: {fileID: 11488012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: planet2-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

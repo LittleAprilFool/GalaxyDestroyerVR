@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: flyer2
+  m_Name: alienbody2
   m_Shader: {fileID: 4800000, guid: 44b54c59129572f469a949a22bc08cd0, type: 3}
-  m_ShaderKeywords: _TEX_ON
+  m_ShaderKeywords: _COLOR_ON _TEX_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -18,9 +18,9 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 29b7883b7d9884955b95dc1a198386dd, type: 3}
+          m_Texture: {fileID: 2800000, guid: fcf5185eef52c4814868d1feb6cb81a9, type: 3}
           m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
+          m_Offset: {x: .5, y: .400000006}
       data:
         first:
           name: _BumpMap
@@ -152,7 +152,7 @@ Material:
       data:
         first:
           name: _TintColor
-        second: 0
+        second: 1
       data:
         first:
           name: _VertexColor
@@ -189,7 +189,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .705882311, g: .628027618, b: .628027618, a: 1}
       data:
         first:
           name: _EmissionColorUI

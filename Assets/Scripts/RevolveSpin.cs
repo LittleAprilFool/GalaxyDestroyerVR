@@ -5,6 +5,7 @@ public class RevolveSpin : MonoBehaviour {
 
 	public Vector3 roundness;
 	public float radius;
+	public int manulscale;	
 
 	private Vector3 thisposition;
 	private Vector3 up;
@@ -12,6 +13,7 @@ public class RevolveSpin : MonoBehaviour {
 	private float alpha;
 	private float speed;
 	private float size;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -41,7 +43,10 @@ public class RevolveSpin : MonoBehaviour {
 		transform.RotateAround (roundness, up, alpha);
 
 		size = Random.Range (5, 10);
-		transform.localScale += new Vector3(size,size,size);
+		if (manulscale == 0)
+			transform.localScale += new Vector3 (size, size, size);
+		else
+			transform.localScale += new Vector3 (manulscale, manulscale, manulscale);
 	}
 
 	// Update is called once per frame
