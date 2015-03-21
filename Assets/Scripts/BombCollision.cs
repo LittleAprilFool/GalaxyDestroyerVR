@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BombCollision : MonoBehaviour {
 
+	public GameObject explosion;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -15,6 +17,7 @@ public class BombCollision : MonoBehaviour {
 	
 	void OnCollisionEnter (Collision collision) {
 		if (collision.gameObject.layer == LayerMask.NameToLayer("Target")) {
+			Instantiate(explosion, transform.position, Quaternion.identity);
 			Destroy(collision.gameObject);
 			Destroy(gameObject);
 		}
