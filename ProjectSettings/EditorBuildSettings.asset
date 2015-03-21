@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/ThrowingDemo.unity
   - enabled: 1
     path: Assets/Scenes/UniverseScene.unity
+  - enabled: 1
+    path: Assets/Scenes/FailScene.unity

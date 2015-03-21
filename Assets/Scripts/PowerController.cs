@@ -5,6 +5,10 @@ public class PowerController : MonoBehaviour {
 	public Vector3 scaleEnd;
 	public float time;
 	private float power;
+	private float morethan;
+	public float limity;
+	public float maxy;
+	public float delta;
 
 	public float Power {
 		get { return power; }
@@ -29,6 +33,17 @@ public class PowerController : MonoBehaviour {
 			thisTransform.localScale = Vector3.Lerp (scaleStart, scaleEnd, i);
 			yield return null;	
 		}
+	}
+
+	public void active(){
+		if(transform.localScale.y < maxy) transform.localScale += new Vector3(0,delta,0);
+	}
+
+	public bool avaliable(){
+		if (transform.localScale.y > limity)
+			return false;
+		else
+			return true;
 	}
 
 }
