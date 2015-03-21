@@ -11,15 +11,17 @@ public class ThrowingControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		head = Camera.main.GetComponent<StereoController>().Head;
+		/*localRotation = Quaternion.identity *
+			Quaternion.FromToRotation(transform.up, transform.right) *
+			Quaternion.FromToRotation(transform.right, transform.forward);*/
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (Cardboard.SDK.CardboardTriggered) {
 			Debug.Log ("Throw!");
-			GameObject newbomb = Instantiate(bomb, transform.position, head.transform.rotation) as GameObject;
+			GameObject newbomb = Instantiate(bomb, transform.position, head.transform.rotation * transform.rotation) as GameObject;
 			Rigidbody rigidbody = newbomb.GetComponent<Rigidbody>();
-			rigidbody.isKinematic = false;
 			rigidbody.velocity = newbomb.transform.TransformVector(speed * powerController.GetComponent<PowerController>().Power);
 		}
 	}
