@@ -11,8 +11,8 @@ PlayerSettings:
   targetIOSGraphics: -1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: AprilHex
-  productName: VR Game Jam
+  companyName: Aprobert
+  productName: GalaxyDestroyer
   cloudProjectId: 
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -74,7 +74,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: org.aprilhex.VRGameJam
+  bundleIdentifier: org.aprobert.GalaxyDestroyer
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
@@ -101,7 +101,7 @@ PlayerSettings:
   uIStatusBarHidden: 1
   uIExitOnSuspend: 0
   uIStatusBarStyle: 0
-  iPhoneSplashScreen: {fileID: 0}
+  iPhoneSplashScreen: {fileID: 2800000, guid: 0d1544f4a621b4e5cba89460a06675ee, type: 3}
   iPhoneHighResSplashScreen: {fileID: 0}
   iPhoneTallHighResSplashScreen: {fileID: 0}
   iPhone47inSplashScreen: {fileID: 0}
@@ -121,11 +121,11 @@ PlayerSettings:
   iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: /Users/aprilwang/Desktop/mykeystore.keystore
+  AndroidKeyaliasName: mygame
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
-  androidEnableBanner: 1
+  androidEnableBanner: 0
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -134,8 +134,22 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 827db192d26ef4fb182ae6d1f5a3ad48, type: 3}
       m_Size: 128
+  - m_BuildTarget: Android
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: b4edc2f0ecef74346be31e6fdfb3287c, type: 3}
+      m_Size: 192
+    - m_Icon: {fileID: 2800000, guid: 827db192d26ef4fb182ae6d1f5a3ad48, type: 3}
+      m_Size: 144
+    - m_Icon: {fileID: 2800000, guid: deb480186e78e442aa73692d70b7336d, type: 3}
+      m_Size: 96
+    - m_Icon: {fileID: 2800000, guid: deb480186e78e442aa73692d70b7336d, type: 3}
+      m_Size: 72
+    - m_Icon: {fileID: 2800000, guid: 8f5b632513365432c97bb34da181b165, type: 3}
+      m_Size: 48
+    - m_Icon: {fileID: 2800000, guid: 1120bac1278fe4884ab74cf4b63af9af, type: 3}
+      m_Size: 36
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
