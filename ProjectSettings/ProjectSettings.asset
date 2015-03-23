@@ -12,7 +12,7 @@ PlayerSettings:
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: Aprobert
-  productName: GalaxyDestroyer
+  productName: Galaxy Destroyer
   cloudProjectId: 
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -150,7 +150,10 @@ PlayerSettings:
       m_Size: 48
     - m_Icon: {fileID: 2800000, guid: 1120bac1278fe4884ab74cf4b63af9af, type: 3}
       m_Size: 36
-  m_BuildTargetBatching: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: Android
+    m_StaticBatching: 1
+    m_DynamicBatching: 1
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
   actionOnDotNetUnhandledException: 1

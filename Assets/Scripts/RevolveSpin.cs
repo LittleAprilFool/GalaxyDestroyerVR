@@ -13,12 +13,11 @@ public class RevolveSpin : MonoBehaviour {
 	private float alpha;
 	private float speed;
 	private float size;
-	
 
 	// Use this for initialization
 	void Start () {
-		theta = Random.Range(-1,1);
-		alpha = Random.Range(-180,180);
+		theta = Random.Range(-1, 1);
+		alpha = Random.Range(-180, 180);
 
 		theta = theta / 10;
 
@@ -32,7 +31,7 @@ public class RevolveSpin : MonoBehaviour {
 
 		speed = 0;
 
-		while(speed < 0.1f && speed > -0.1f)speed = Random.Range(-0.8f,0.8f);
+		while(speed < 0.1f && speed > -0.1f)speed = Random.Range(-0.8f, 0.8f);
 
 		thisposition.y = radius * Mathf.Sin (theta);
 		thisposition.x = radius * Mathf.Cos (theta);

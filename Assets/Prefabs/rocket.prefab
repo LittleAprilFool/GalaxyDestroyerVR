@@ -327,13 +327,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 166564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e3ab3efa502844f8cf3b77d796888f, type: 3}
+  m_Script: {fileID: 11500000, guid: 10b61b28008db57458609b71ea53dc11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 107320, guid: 715269663fa1a474fad42f1fde675402, type: 2}
-  targetLayers:
-  - Planet
-  - Enemy
+  targetLayers: []
 --- !u!136 &13665224
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -571,7 +569,7 @@ ParticleSystem:
       minMaxState: 0
     gravityModifier: 0
     inheritVelocity: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
   ShapeModule:
     serializedVersion: 2
     enabled: 0
@@ -1599,7 +1597,7 @@ ParticleSystem:
       minMaxState: 0
     gravityModifier: 0
     inheritVelocity: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
   ShapeModule:
     serializedVersion: 2
     enabled: 0

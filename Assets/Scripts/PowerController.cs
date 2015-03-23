@@ -15,29 +15,35 @@ using System.Collections;
 public class PowerController : MonoBehaviour {
 	public float maxScale;
 	public float throttleScale;
-
 	public float fireUsage;
 	public float recoverSpeed;
 
-	public float Power {
+	private Vector3 deltaRecover, deltaFire, initScale;
+
+	public float power {
 		get { return 1 - transform.localScale.x / maxScale; }
 	}
-
-	void Update() {
-		//if (Input.GetMouseButtonDown(0))
-		//	Fire();
+	
+	public bool available {
+		get { return transform.localScale.x < throttleScale; }
 	}
 
-	void FixedUpdate(){
-		if (transform.localScale.x > 0) transform.localScale -= new Vector3(maxScale * recoverSpeed, 0, 0);
+	void Start() {
+		deltaRecover = new Vector3(maxScale * recoverSpeed, 0f, 0f);
+		deltaFire = new Vector3(maxScale * fireUsage, 0f, 0f);
+		initScale = transform.localScale;
 	}
 
-	public void Fire(){
-		if (Available()) 
-			transform.localScale += new Vector3(maxScale * fireUsage, 0, 0);
+	void FixedUpdate() {
+		if (transform.localScale.x > 0)
+			transform.localScale -= deltaRecover;
+		if (transform.localScale.x < 0)
+			transform.localScale = initScale;
 	}
 
-	public bool Available(){
-		return transform.localScale.x < throttleScale;
+	public void Fire() {
+		if (available) 
+			transform.localScale += deltaFire;
 	}
+
 }

@@ -7,29 +7,28 @@ public class SelfScale : MonoBehaviour {
 	private Vector3 originscale;
 	private Vector3 scalespeed;
 	public int time;
-	private bool way;
+	private bool direction;
+
 	void Start(){
 		originscale = transform.localScale;
 		scalespeed = finalscale / time;
-		way = true;
+		direction = true;
 	}
 
-	void Update(){
-		if (way) {
+	void FixedUpdate(){
+		if (direction) {
 			transform.localScale += scalespeed;
 			if (transform.localScale.x > finalscale.x) {
 				transform.localScale = finalscale;
-				way = false;
+				direction = false;
 			}
 		} else {
 			transform.localScale -= scalespeed;
 			if (transform.localScale.x < originscale.x) {
 				transform.localScale = originscale;
-				way = true;
+				direction = true;
 			}
 		}
-
 	}
-
 
 }
