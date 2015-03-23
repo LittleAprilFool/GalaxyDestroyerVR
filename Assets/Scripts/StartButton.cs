@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class StartButton : MonoBehaviour {
 	public GameObject ButtonTexture;
 	public float glazeSeconds = 2;
+	public bool flag;
 
 	private CardboardHead head;
 	private float timer;
@@ -20,6 +21,10 @@ public class StartButton : MonoBehaviour {
 		RaycastHit hit;
 		bool isLookedAt = GetComponent<Collider>().Raycast(head.Gaze, out hit, Mathf.Infinity);
 
+		flag = false;
+		if (Input.GetMouseButtonDown (0))
+			flag = true;
+
 		if (isLookedAt) {
 			timer += Time.deltaTime;
 			ButtonTexture.GetComponent<RawImage>().color = blue;
@@ -31,7 +36,7 @@ public class StartButton : MonoBehaviour {
 			timer = 0;
 		}
 
-		if (Cardboard.SDK.CardboardTriggered) {
+		if (Cardboard.SDK.CardboardTriggered || flag) {
 			Application.LoadLevel("UniverseScene");
 		}
 	}
