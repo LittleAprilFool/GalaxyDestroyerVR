@@ -566,6 +566,34 @@ Prefab:
       propertyPath: vrModeEnabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 450998, guid: 78af999dfa14847e8b850e681483341f, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 6.48514462
+      objectReference: {fileID: 0}
+    - target: {fileID: 450998, guid: 78af999dfa14847e8b850e681483341f, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 6.48514605
+      objectReference: {fileID: 0}
+    - target: {fileID: 450998, guid: 78af999dfa14847e8b850e681483341f, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 6.48514605
+      objectReference: {fileID: 0}
+    - target: {fileID: 450998, guid: 78af999dfa14847e8b850e681483341f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 450998, guid: 78af999dfa14847e8b850e681483341f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 423316, guid: 78af999dfa14847e8b850e681483341f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 423316, guid: 78af999dfa14847e8b850e681483341f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 129
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78af999dfa14847e8b850e681483341f, type: 2}
   m_IsPrefabParent: 0
